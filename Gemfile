@@ -16,6 +16,7 @@ gem 'coffee-script-source', '1.8.0'
 # Use Haml as the templating library
 gem 'haml'
 # Use jquery as the JavaScript library
+gem 'cucumber-rails'
 gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
@@ -42,15 +43,19 @@ group :development, :test do
 
   gem 'rspec-rails'
   gem 'guard-rspec'
-  
+
   # Use sqlite3 as the database for Active Record
   gem 'sqlite3'
 
   # Access an IRB console on exception pages or by using <%= console %> in views
-  gem 'web-console', '~> 2.0'
+
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
+end
+
+group :development do
+  gem 'web-console', '~> 2.0'
 end
 
 group :production do
