@@ -17,6 +17,11 @@ gem 'coffee-script-source', '1.8.0'
 gem 'haml'
 # Use jquery as the JavaScript library
 gem 'cucumber-rails'
+gem 'cucumber-rails-training-wheels'
+gem 'capybara'
+gem 'database_cleaner'
+gem 'capybara'
+gem 'launchy'
 gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
@@ -52,6 +57,9 @@ group :development, :test do
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
+
+  # database_cleaner is not required, but highly recommended
+  gem 'database_cleaner'
 end
 
 group :development do
